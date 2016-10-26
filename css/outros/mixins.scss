@@ -1,0 +1,86 @@
+@mixin tamanhoPadrao($tamanho:10%, $flutuar:left, $cor:transparent, $bgcolor:transparent){
+    -moz-width: $tamanho;
+    -webkit-width: $tamanho;
+    -o-width: $tamanho;
+    width: $tamanho;
+    float:$flutuar;
+    color: $cor;
+    background-color: $bgcolor;
+}
+@mixin margem($top:0, $bottom:0, $right:0, $left:0){
+  margin: $top $right $bottom $left;
+}
+
+
+@mixin espacamento($top, $bottom){
+  padding: $top $bottom;
+}
+
+@mixin spacing($top, $right, $bottom, $left) {
+  padding: $top $right $bottom $left;
+}
+
+@mixin sombra($valor1:1, $valor2:1, $valor3:8, $cor:none){
+  box-shadow: $valor1 $valor2 $valor3 $cor;
+}
+
+@mixin font($tamanho, $cor){
+  font-size: $tamanho;
+  color: $cor;
+}
+
+@mixin tipoFont($tipo){
+  font-family: $tipo;
+}
+
+@mixin borda($top: 0, $right: 0, $bottom: 0, $left: 0, $cor:#fff){
+  border-style: solid;
+  border-color: $cor;
+  border-top-width: $top;
+  border-right-width: $right;
+  border-bottom-width: $bottom ;
+  border-left-width: $left;
+}
+
+@mixin arrendodar($radio){
+  border-radius: $radio;
+}
+
+@mixin alinhar($direcao){
+  text-align: $direcao;
+}
+
+@mixin color($cor){
+  color: $cor;
+}
+
+@mixin bgColor($cor){
+  background-color: $cor;
+}
+
+@mixin fontWeight($n){
+  font-weight: $n;
+}
+
+@mixin indentar($quantidade){
+  text-indent: $quantidade;
+}
+
+@mixin gradient-simple($direction, $cor1, $cor2){
+  background: -moz-linear-gradient($direction,$cor1, $cor2);
+  background: -webkit-linear-gradient($direction,$cor1, $cor2);
+  background: -o-linear-gradient($direction,$cor1, $cor2);
+  background: linear-gradient($direction,$cor1, $cor2);
+}
+@mixin gradient-middle($direction1, $direction2, $cor1, $cor2){
+  background: -moz-linear-gradient($direction1 $direction2, $cor1, $cor2);
+  background: -webkit-linear-gradient($direction1 $direction2, $cor1, $cor2);
+  background: -o-linear-gradient($direction1 $direction2, $cor1, $cor2);
+  background: linear-gradient($direction1 $direction2, $cor1, $cor2);
+}
+@mixin gradient-supper($direction1, $direction2, $cor1, $cor2, $cor3, $cor4){
+  background: -moz-linear-gradient($direction1 $direction2, $cor1, $cor2, $cor3, $cor4);
+  background: -webkit-linear-gradient($direction1 $direction2, $cor1, $cor2, $cor3, $cor4);
+  background: -o-linear-gradient($direction1 $direction2, $cor1, $cor2, $cor3, $cor4);
+  background: linear-gradient($direction1 $direction2, $cor1, $cor2, $cor3, $cor4);
+}

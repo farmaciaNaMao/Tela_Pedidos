@@ -1,0 +1,5 @@
+.container {
+  @include tamanhoPadrao(100%, left, #000);
+  @include margem(4%, 0);
+}
+

@@ -1,0 +1,81 @@
+.detalhes-pedido {
+  @include  tamanhoPadrao(100%, left, #000);
+}
+
+// Barra de Detalhes do Cliente
+.info-cliente-btn {
+  @include tamanhoPadrao(100%, left, #000);
+  @include bgColor(#f7f8f8);
+  border-top: 2px solid $cor-barra;
+  @include sombra(1px 1px 2px #1e1e1e);
+}
+
+.texto-info {
+  @include  espacamento(2%, 0);
+  @include tamanhoPadrao(100%, left, #000);
+}
+
+.icon-info , .title-info{
+  @include alinhar(center);
+}
+
+.icon-info {
+  @include tamanhoPadrao(5%, left, #000);
+  @include margem(0 , 0 , 0, 2%);
+}
+
+.title-info {
+  @include tamanhoPadrao(86%, left, #000);
+} //Fim da Barra de Detalhes
+
+
+/* Pedido Clicado */
+
+.pedido-clicado {
+  @include bgColor(#fff);
+  @include margem(0, 2%, 0 ,0 );
+  @include espacamento(2%, 3%);
+  @include sombra(0.1px, 0.1px ,0.5px, lighten(#909090, 15));
+  @include tamanhoPadrao(100%, left, #000);
+}
+
+.detal-pedido {
+  @include espacamento(1%, 2%);
+  @include tamanhoPadrao(80%, left, #000);
+}
+
+
+
+
+
+.first-detalhes-info, .second-detalhes-info {
+  @include tamanhoPadrao(50%, left, #000);
+  margin: 0 auto;
+
+}
+
+.detalhe-nome, .detalhe-numero, .detalhe-hora, .detalhe-atend {
+  @include tamanhoPadrao(100%, left, #000);
+  @include indentar(15px);
+}
+
+.detalhe-nome {
+  @include font(1.2em, #000);
+}
+
+.detalhe-numero{
+  @include font(0.8em, #000);
+  margin: 0 auto;
+}
+
+.detalhe-hora {
+  @include margem(0.4em);
+  @include font(0.8em, #000);
+  @include alinhar(right);
+}
+
+.detalhe-atend  {
+  @include margem(0.4em);
+  @include font(0.8em, #000);
+  @include alinhar(right);
+}

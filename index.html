@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Pedidos</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Fontes Google -->
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="css/layoult/font-awesome.css">
+    <link rel="stylesheet" href="css/tela.css">
+    <!-- Biblioteca Jquery -->
+    <script type="text/javascript" src="js/jquery/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/dispositivos/verificaTela.js"></script>
+    <script type="text/javascript" src="js/dispositivos/menu.js"></script>
+    <script type="text/javascript" src="js/dispositivos/pedidos.js"></script>
+</head>
+<body>
+<!-- Barra Vermelha Principal do Sistema -->
+<header class="barra">
+    <div class="hamburguer">
+        <i class="fa fa-bars"></i>
+    </div>
+    <div class="titulo-principal">
+        <h2><span>Farmácia</span> Na Mao</h2>
+    </div>
+</header>
+
+<!-- Menu -->
+<div class="menu">
+    <div class="btn-menu">
+        <button id="button-pedidos">Pedidos</button>
+    </div>
+
+    <div class="lista-menu">
+        <div class="titulo-lista-menu">
+            <h3>Pedidos</h3>
+        </div>
+
+        <div class="itens-lista">
+            <ul>
+                <li class="item pendentes"><span class="span1">0</span>Pendentes</li>
+                <li class="item analise"><span class="span2">0</span>Análise</li>
+                <li class="item aceitos"><span class="span3">0</span>Aceitos</li>
+                <li class="item prontos"><span class="span4">0</span>Prontos</li>
+                <li class="item concluido"><i class="fa fa-check concluidos"></i>Concluidos</li>
+                <li class="item recusado"> <i class="fa fa-thumbs-down recusados"></i>Recusados</li>
+                <li class="item cancelado"><i class="fa fa-times cancelados"></i>Cancelados</li>
+                <li class="supporte"><button class="btn-supporte">Suporte</button></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+ <!-- Container Pedidos-->
+<main class="container">
+    <!-- Area dos Pedidos-->
+    <section class="pedidos">
+
+        <!-- Nome do Tipo do Pedido-->
+        <article class="titulo-pedidos">
+            <div class="texto-titulo">
+                <div class="icon-titulo"><i class="fa fa-chevron-up" id="mostrar-oculta"></i></div>
+                <div class="title-pedido"><h3 class="title-text">Pendentes</h3></div>
+            </div>
+        </article>
+
+        <article class="pedidos-pendentes">
+
+            <!-- O Pedido Mesmo -->
+            <div class="primeiro-pedido">
+                <!-- Logo do Pedido-->
+                <div class="logo-pedido"><div></div></div>
+                <!-- Informacoes do Pedido -->
+                <div class="info-pedido">
+                    <div class="first-info">
+                        <div class="info-nome">Igor</div>
+                        <div class="info-numero">Nº 123</div>
+                    </div>
+                    <div class="second-info">
+                        <div class="info-hora">20:56</div>
+                        <div class="info-atend">Atendente: Pedro</div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </article>
+
+
+        <article class="pedidos-analise">
+            <!-- O Pedido Mesmo -->
+            <div class="primeiro-pedido">
+                <!-- Logo do Pedido-->
+                <div class="logo-pedido"><div></div></div>
+                <!-- Informacoes do Pedido -->
+                <div class="info-pedido">
+                    <div class="first-info">
+                        <div class="info-nome">Paulo</div>
+                        <div class="info-numero">Nº 123</div>
+                    </div>
+                    <div class="second-info">
+                        <div class="info-hora">20:56</div>
+                        <div class="info-atend">Atendente: Pedro</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- O Pedido Mesmo -->
+            <div class="primeiro-pedido">
+                <!-- Logo do Pedido-->
+                <div class="logo-pedido"><div></div></div>
+                <!-- Informacoes do Pedido -->
+                <div class="info-pedido">
+                    <div class="first-info">
+                        <div class="info-nome">Pedro</div>
+                        <div class="info-numero">Nº 123</div>
+                    </div>
+                    <div class="second-info">
+                        <div class="info-hora">20:56</div>
+                        <div class="info-atend">Atendente: Pedro</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- O Pedido Mesmo -->
+            <div class="primeiro-pedido">
+                <!-- Logo do Pedido-->
+                <div class="logo-pedido"><div></div></div>
+                <!-- Informacoes do Pedido -->
+                <div class="info-pedido">
+                    <div class="first-info">
+                        <div class="info-nome">Pedro</div>
+                        <div class="info-numero">Nº 123</div>
+                    </div>
+                    <div class="second-info">
+                        <div class="info-hora">20:56</div>
+                        <div class="info-atend">Atendente: Pedro</div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </article>
+
+        <article class="pedidos-prontos">
+            Area dos Pedidos Prontos
+        </article>
+
+        <article class="pedidos-aceitos">
+            Área dos Pedidos Aceitos
+        </article>
+
+        <article class="pedidos-concluidos">
+            Área dos Pedidos Concluidos
+        </article>
+
+        <article class="pedidos-recusados">
+            área dos Pedidos Recusados
+        </article>
+
+        <article class="pedidos-cancelados">
+            Área dos Pedidos Cancelados
+        </article>
+
+
+    </section> <!-- Fim da Area dos Pedidos-->
+
+
+
+    <!-- Área das Informacoes Detalhadas do Cliete-->
+    <section class="detalhes-pedido">
+
+        <!-- Foco no Pedido CLicado Aparece -->
+        <div class="pedido-clicado">
+            <!-- Logo do Pedido -->
+            <div class="logo-pedido"><div></div></div>
+            <!-- Informacoes do Pedido -->
+            <div class="detal-pedido">
+                <div class="first-detalhes-info">
+                    <div class="detalhe-nome"></div>
+                    <div class="detalhe-numero">Nº 123</div>
+                </div>
+                <div class="second-detalhes-info ">
+                    <div class="detalhe-hora">20:56</div>
+                    <div class="detalhe-atend">Atendente: Pedro</div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Barra de Descriçao do Cliente -->
+        <article class="info-cliente-btn">
+            <div class="texto-info">
+                <div class="icon-info"><i class="fa fa-chevron-down" ></i></div>
+                <div class="title-info"><h3>Informacoes-Detalhadas</h3></div>
+            </div>
+        </article>
+
+
+
+    </section>
+
+
+
+</main><!-- FIm do Container-->
+
+
+</body>
+</html>

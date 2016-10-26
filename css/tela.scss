@@ -1,0 +1,38 @@
+//Mixins
+@import "outros/variaveis";
+@import "outros/mixins";
+@import "outros/placeholder";
+
+//Reset
+@import "reset/reset";
+
+//Importando Barra Principal do Sistema
+@import "layoult/barra";
+//Importando Menu dos Pedidos
+@import "layoult/menu";
+//Importando Container
+@import "layoult/container";
+//Área dos Pedidos
+@import "layoult/pedidos";
+//Detalhes do Pedido
+@import "layoult/detalhes-pedido";
+
+
+//Breakpoints
+@import "responsivo/dispositivos-360";
+@import "responsivo/dispositivos-768";
+@import "responsivo/dispositivos-800";
+@import "responsivo/dispositivos-980";
+@import "responsivo/dispositivos-1024";
+@import "responsivo/dispositivos-1280";
+@import "responsivo/dispositivos-1366";
+@import "responsivo/dispositivos-1720";
+// Full-HD
+@import "responsivo/dispositivos-1920";
+@import "responsivo/dispositivos-1980";
+
+// Resolução 4K
+@import "responsivo/4K/tela-3656";
+@import "responsivo/4K/tela-3840";
+@import "responsivo/4K/tela-3996";
+@import "responsivo/4K/tela-4096";

@@ -1,0 +1,89 @@
+//Sessao dos Pedidos
+.pedidos, .pedidos-pendentes, .primeiro-pedido,.titulo-pedidos, .texto-titulo {
+  @include tamanhoPadrao(100%, left, #000);
+}
+// Área dos Pedidos Pendentes
+.pedidos-pendentes{
+  @include margem(0, 1%);
+}
+
+/* Titulo do Tipo do Pedido*/
+.titulo-pedidos {
+  @include bgColor(#f7f8f8);
+  border-top: 2px solid $cor-barra;
+  @include sombra(0.1px 0.1px 5px #1e1e1e);
+}
+
+.texto-titulo {
+  @include  espacamento(2%, 0);
+}
+
+.icon-titulo, .title-pedido {
+  @include alinhar(center);
+}
+
+.icon-titulo {
+  @include tamanhoPadrao(5%, left, #000);
+  @include margem(0 , 0 , 0, 2%);
+}
+
+.title-pedido {
+  @include tamanhoPadrao(86%, left, #000);
+}
+
+// Design do Pedido
+.primeiro-pedido {
+  @include bgColor(#fff);
+ // @include margem(0, 1.5%, 0 ,0 );
+  @include espacamento(2%, 3%);
+ // @include sombra(0.2px, 0.2px , 2px, lighten(#909090, 15));
+  @include borda(0, 0, 1px, 0, lighten(#1e1e1e,80));
+}
+
+// Logo do Pedido
+.logo-pedido {
+  @include tamanhoPadrao(20%, left, #000);
+  div {
+    margin: 0 auto;
+    width: 56px;
+    height: 56px;
+    @include bgColor(#E0E0E0);
+    @include arrendodar(56px);
+  }
+}
+
+.info-pedido {
+  @include espacamento(1%, 2%);
+  @include tamanhoPadrao(80%, left, #000);
+}
+.first-info, .second-info {
+  @include tamanhoPadrao(50%, left, #000);
+  margin: 0 auto;
+
+}
+
+.info-nome, .info-numero, .info-hora, .info-atend {
+  @include tamanhoPadrao(100%, left, #000);
+  @include indentar(15px);
+}
+
+.info-nome {
+  @include font(1.2em, #000);
+}
+
+.info-numero{
+  @include font(0.8em, #000);
+  margin: 0 auto;
+}
+
+.info-hora {
+  @include margem(0.4em);
+  @include font(0.8em, #000);
+  @include alinhar(right);
+}
+
+.info-atend  {
+  @include margem(0.4em);
+  @include alinhar(right);
+  @include font(0.8em, #000);
+}

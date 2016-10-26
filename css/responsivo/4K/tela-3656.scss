@@ -1,0 +1,15 @@
+@media screen and (min-width: 3656px) {
+
+  /* Barra Principal do Sistema */
+  .hamburguer {
+    @include espacamento(0.2%,0.5%);
+  }
+  .hamburguer {
+    width: 0.5%;
+  }
+  .titulo-principal {
+    @include espacamento(0.2%,0);
+  }
+
+
+}

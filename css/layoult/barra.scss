@@ -1,0 +1,25 @@
+@import "../outros/variaveis";
+
+.barra {
+  @include tamanhoPadrao(100%, left, transparent, $cor-barra);
+  //@include sombra(0.2px ,0.2px, 4px, $cor-barra);
+}
+
+.hamburguer, .titulo-principal {
+  float: left;
+}
+
+.hamburguer {
+  width: 10%;
+  padding: 3% 4%;
+  color: #fff;
+}
+
+.titulo-principal {
+  @include tamanhoPadrao(90%, left, $branco);
+  padding: 3% 0;
+
+  span {
+    font-weight: bold;
+  }
+}

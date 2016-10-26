@@ -1,0 +1,82 @@
+// Menu
+.menu {
+  @include tamanhoPadrao(100%, left);
+  @include margem(4%);
+}
+
+// Botao do Menu
+.btn-menu {
+  @include tamanhoPadrao(100%, left);
+
+  button {
+    @include tamanhoPadrao(90%, left, $branco,  $cor-btnmenu);
+    @include espacamento(1.5%, 0);
+    @include margem(0, 0, 0, 5%);
+    @include arrendodar(2px);
+    @include borda(0,0,2px,0,darken($cor-barra,10));
+    //@include sombra(0.5px, 0.5px, 2px, $cor-btnmenu);
+
+    &:active{
+      opacity: 0.6;
+    }
+  }
+}
+
+// Lista do Menu
+.lista-menu {
+
+  @include  tamanhoPadrao(90%, left, #000, #eaeded);
+  @include margem(0, 0, 0, 5%);
+}
+
+// Titulo da Lista
+.titulo-lista-menu {
+  @include  tamanhoPadrao(100%, left, #000, #e5e8e8);
+  text-align: center;
+  @include font(1.2em, #000);
+}
+
+// Itens da Lista
+.itens-lista {
+  @include  tamanhoPadrao(100%, left, #000);
+
+  ul {
+    @include tamanhoPadrao(100%, left, #000);
+  }
+
+  ul li {
+    @include espacamento(4%, 4%);
+    @include borda(0, 0,1px,0, #f8f9f9);
+  }
+
+  .item {
+    &:hover {
+      @include bgColor(darken(#eaeded, 4));
+    }
+  }
+
+  ul li span {
+    @include color(#fff);
+    @include spacing(2% , 5% , 2% , 6%);
+    @include arrendodar(10px);
+    @include margem(0, 0 , 2% , 0);
+    @include alinhar(center);
+    @include fontWeight(900);
+  }
+  .span1 { @include bgColor($notification1); }
+  .span2 { @include bgColor($notification2); }
+  .span3 { @include bgColor($notification3); }
+  .span4 { @include bgColor($notification4); }
+}
+
+.recusados, .concluidos, .cancelados {
+  @include margem(0, 0 , 2%, 4%);
+}
+
+.supporte  button{
+    width: 30%;
+  @include espacamento(1%, 0);
+  @include arrendodar(2px);
+  @include bgColor($cor-barra);
+  @include color($branco);
+}
